@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Todo Tab",
+	"name": "Newsworthy Tab",
 	"version": "0.1",
-	"description": "Todo custom new tab for Google Chrome",
+	"description": "Newsworthy custom new tab for Google Chrome",
 	"permissions": ["management"],
 	"chrome_url_overrides": {
 		"newtab": "newtab.html"

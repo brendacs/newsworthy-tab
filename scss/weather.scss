@@ -1,0 +1,18 @@
+#city {
+	cursor: pointer;
+
+	label {
+		border: none;
+	}
+
+	input[type="text"] {
+		@include basic-button;
+		background: transparent;
+		border: none;
+		text-align: center;
+		padding: 5px 0px;
+		margin: 0px;
+		width: 100px;
+		height: 35px;
+	}
+}

@@ -1,0 +1,7 @@
+#todo-button {
+	@include basic-button;
+	border-radius: 50%;
+	background-color: $secondary-color;
+	border: 2px outset $secondary-color;
+	box-shadow: 1px 1px 10px $shadow-color;
+}

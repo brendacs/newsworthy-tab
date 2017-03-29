@@ -1,0 +1,35 @@
+/* variables */
+
+$primary-color: #00bdda;
+$secondary-color: white;
+$tertiary-color: #b62935;
+$quaternary-color: #423e35;
+
+$primary-font: Dolce Vita;
+$secondary-font: basictitlefont;
+$tertiary-font: Cocogoose;
+
+/* mixins */
+
+@mixin align-centerer($direction) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+}
+
+@mixin centerer($direction) {
+	@include align-centerer($direction);
+	justify-content: center;
+}
+
+@mixin basic-button {
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+@import 'reset';
+@import 'fonts';
+@import 'layout';

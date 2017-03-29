@@ -1,0 +1,28 @@
+@font-face {
+	font-family: Cocogoose;
+	src: url("../../fonts/Cocogoose_trial.otf");
+}
+
+@font-face {
+	font-family: Dolce Vita;
+	src: url("../../fonts/Dolce Vita.ttf");
+}
+
+@font-face {
+	font-family: Champagne-Limousines;
+	src: url("../../fonts/Champagne-Limousines.ttf");
+}
+
+@font-face {
+	font-family: basictitlefont;
+	src: url("../../fonts/basictitlefont.ttf");
+}
+
+@font-face {
+	font-family: telegrafico;
+	src: url("../../fonts/telegrafico.ttf");
+}
+
+body {
+	font-family: $primary-font;
+}

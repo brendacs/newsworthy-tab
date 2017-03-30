@@ -26,18 +26,22 @@
 body {
 	
 	#todo {
-		font: 20px $primary-font;
+		font: 20px $secondary-font;
+		color: black;
 
 		h2 {
-			font: 40px $tertiary-font;
+			font: 35px $primary-font;
+			text-shadow: 2px 2px 3px $shadow-color;
+			text-transform: uppercase;
 		}
 
 		input[type="text"] {
-			font: 17px $primary-font;
+			font: 17px $secondary-font;
 		}
 
 		button {
 			font: 10px $tertiary-font;
+			color: $primary-color;
 		}
 	}
 

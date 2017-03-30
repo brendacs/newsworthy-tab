@@ -1,13 +1,12 @@
 #todo {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	z-index: 1;
 	box-shadow: 10px 0px 20px 10px $shadow-color;
 
 	h2 {
 		width: 100%;
-		background-color: rgba(255, 0, 0, 0.6);
 		color: $primary-color;
-		padding: 30px 0px;
+		padding: 40px 0px 20px 0px;
 		text-align: center;
 	}
 
@@ -18,14 +17,14 @@
 			@include basic-button;
 			margin: 20px 10px;
 			padding: 5px;
-			height: 35px;
+			height: 25px;
 			width: 200px;
 			cursor: auto;
-			border: 1px solid rgba(255, 0, 0, 0.8);
+			border: none;
 		}
 	}
 
-	#todo-list::-webkit-scrollbar {
+	#todo-list::-webkit-scrollbar, li::-webkit-scrollbar {
 		display: none;
 		width: 0;
 		background: transparent;
@@ -43,18 +42,18 @@
 				justify-content: space-between; // to put text at beginning, x at end
 				width: 200px;
 				margin: 5px 0px;
-				color: $primary-color;
+				overflow: scroll;
 
 				button {
 					outline: none;
 					border-radius: 50%;
 					cursor: pointer;
-					background-color: rgba(255, 0, 0, 0.7);
+					background-color: rgba(255, 0, 0, 0.6);
 					border: none;
 					height: 20px;
 					width: 20px;
 					text-align: center;
-					color: $primary-color;
+					margin-left: 5px;
 				}
 			}
 		}

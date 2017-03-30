@@ -7,7 +7,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000
 	});
-});	
+});
 var apiKey = '7a110642c1749435874076dba1ccc37f';
 
 function getWeather() {

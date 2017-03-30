@@ -43,4 +43,10 @@ body { padding: 70px 0px 0px 0px; }
 
 #todo-button:active { border: 2px inset red; }
 
+.article { opacity: 1; transition: all 0.25s ease; }
+
+.article:hover { opacity: 0.8; cursor: pointer; }
+
+#news div a:hover { text-decoration: underline; }
+
 /*# sourceMappingURL=main.css.map */

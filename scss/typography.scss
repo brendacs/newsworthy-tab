@@ -24,6 +24,27 @@
 }
 
 body {
+	#todo-button {
+		font: 25px Arial;
+		color: $primary-color;
+	}
+
+	#todo {
+		font: 20px $primary-font;
+
+		h2 {
+			font: 40px $tertiary-font;
+		}
+
+		input[type="text"] {
+			font: 17px $primary-font;
+		}
+
+		button {
+			font: 10px $tertiary-font;
+		}
+	}
+
 	#weather {
 		#city, #city input[type="text"] {
 			font: 25px $primary-font;
@@ -42,11 +63,6 @@ body {
 			color: $primary-color;
 			text-shadow: 2px 3px 8px $shadow-color;
 		}
-	}
-
-	#todo-button {
-		font: 25px Arial;
-		color: $primary-color;
 	}
 
 	#news {

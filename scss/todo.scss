@@ -5,3 +5,54 @@
 	border: 2px outset $secondary-color;
 	box-shadow: 1px 1px 10px $shadow-color;
 }
+
+#todo {
+	background-color: $primary-color;
+	z-index: 1;
+	box-shadow: 10px 0px 20px 10px $shadow-color;
+
+	#todo-add {
+		@include centerer(row);
+	}
+
+	h2 {
+		width: 100%;
+		background-color: $secondary-color;
+		color: $primary-color;
+		padding: 30px 0px;
+		text-align: center;
+	}
+
+	input[type="text"] {
+		@include basic-button;
+		margin: 20px 10px;
+		padding: 5px;
+		height: 35px;
+		width: 200px;
+		cursor: auto;
+		border: 1px solid $secondary-color;
+	}
+
+	#todo-list ul {
+		@include centerer(column);
+
+		li {
+			@include centerer(row); // center remove button vertically next to text
+			justify-content: space-between; // to put text at beginning, x at end
+			width: 200px;
+			margin: 5px 0px;
+
+			button {
+				outline: none;
+				border-radius: 50%;
+				cursor: pointer;
+				background-color: $secondary-color;
+				border: none;
+				height: 20px;
+				width: 20px;
+				text-align: center;
+				color: $primary-color;
+			}
+		}
+	}
+}

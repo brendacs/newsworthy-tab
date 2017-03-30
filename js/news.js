@@ -18,7 +18,7 @@ function getNews() {
 		url: 'https://newsapi.org/v1/articles?source=' + source + '&sortBy=' + sortMethod + '&apiKey=' + apiKey,
 		dataType: 'json',
 		success: function(news) {
-			console.log(news);
+			// console.log(news);
 
 			i = 0;
 			$('#news div div div').each(function(){

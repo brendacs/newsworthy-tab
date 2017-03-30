@@ -48,4 +48,11 @@ body {
 		font: 25px Arial;
 		color: $primary-color;
 	}
+
+	#news {
+		a {
+			color: $primary-color;
+			font: 10px $secondary-font;
+		}
+	}
 }

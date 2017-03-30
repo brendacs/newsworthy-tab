@@ -17,6 +17,7 @@ body #weather #city, body #weather #city input[type="text"] { font: 25px Champag
 body #weather #city label { font: 12px basictitlefont; text-shadow: 1px 1px 2px #000000; }
 body #weather #temp { font: 140px Champagne-Limousines; letter-spacing: 10px; color: white; text-shadow: 2px 3px 8px #000000; }
 body #todo-button { font: 25px Arial; color: white; }
+body #news a { color: white; font: 10px basictitlefont; }
 
 html, body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%; cursor: default; background: url("../../images/landscape.jpeg") no-repeat center; background-size: 100%; overflow: hidden; }
 
@@ -33,7 +34,8 @@ body { padding: 70px 0px 0px 0px; }
 #city input[type="text"] { display: flex; flex-direction: column; align-items: center; justify-content: center; outline: none; border-radius: 5px; cursor: pointer; transition: all 0.25s ease; background: transparent; border: none; text-align: center; padding: 5px 0px; margin: 0px; width: 100px; height: 35px; }
 
 #news div { width: 100%; }
-#news img { width: 300px; border-radius: 5px; }
+#news div img { width: 300px; border-radius: 5px; }
+#news div a { text-decoration: none; }
 
 #todo-button { display: flex; flex-direction: column; align-items: center; justify-content: center; outline: none; border-radius: 5px; cursor: pointer; transition: all 0.25s ease; border-radius: 50%; background-color: red; border: 2px outset red; box-shadow: 1px 1px 10px #000000; }
 

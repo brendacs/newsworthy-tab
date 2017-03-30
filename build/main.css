@@ -26,7 +26,7 @@ html, body { display: flex; flex-direction: column; align-items: center; justify
 
 body { padding: 70px 0px 0px 0px; }
 
-#todo { display: flex; flex-direction: column; align-items: center; position: absolute; height: 100%; width: 25%; right: 0; top: 0; }
+#todo { display: flex; flex-direction: column; align-items: center; position: absolute; height: 100%; width: 325px; right: 0; top: 0; }
 
 #main-container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100%; width: 100%; }
 #main-container #weather { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50%; width: 50%; }
@@ -57,5 +57,9 @@ body { padding: 70px 0px 0px 0px; }
 .article:hover { opacity: 0.8; cursor: pointer; }
 
 #news div a:hover { text-decoration: underline; }
+
+#todo { margin-right: -300px; transition: all 0.35s ease; }
+
+#todo:hover { margin-right: -0px; }
 
 /*# sourceMappingURL=main.css.map */

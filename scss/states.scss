@@ -17,3 +17,12 @@
 #news div a:hover {
 	text-decoration: underline;
 }
+
+#todo {
+	margin-right: -300px;
+	transition: all 0.35s ease;
+}
+
+#todo:hover {
+	margin-right: -0px;
+}

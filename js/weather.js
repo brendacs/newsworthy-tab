@@ -20,7 +20,7 @@ $('#zipcode').focus(function selectAllText() {
 	$(this).select();
 });
 
-$("#zipcode").on("keydown",function changeZip(e) {
+$('#zipcode').on('keydown',function changeZip(e) {
     if(e.keyCode == 13) {
     	$(this).blur(); // unfocus to get rid of blinking cursor
         getWeather();

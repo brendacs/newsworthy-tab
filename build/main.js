@@ -1,3 +1,13 @@
+$(document).ready(function(){
+	$('.center').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+});	
 var apiKey = '7a110642c1749435874076dba1ccc37f';
 
 function getWeather() {
@@ -20,7 +30,7 @@ $('#zipcode').focus(function selectAllText() {
 	$(this).select();
 });
 
-$("#zipcode").on("keydown",function changeZip(e) {
+$('#zipcode').on('keydown',function changeZip(e) {
     if(e.keyCode == 13) {
     	$(this).blur(); // unfocus to get rid of blinking cursor
         getWeather();

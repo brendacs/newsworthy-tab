@@ -4,10 +4,6 @@
 	}
 }
 
-#todo-button:active {
-	border: 2px inset $secondary-color;
-}
-
 .article {
 	opacity: 1;
 	transition: all 0.25s ease;
@@ -20,4 +16,13 @@
 
 #news div a:hover {
 	text-decoration: underline;
+}
+
+#todo {
+	margin-right: -300px;
+	transition: all 0.35s ease;
+}
+
+#todo:hover {
+	margin-right: -0px;
 }

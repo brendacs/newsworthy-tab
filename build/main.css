@@ -13,7 +13,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 @font-face { font-family: Champagne-Limousines; src: url("../../fonts/Champagne-Limousines.ttf"); }
 @font-face { font-family: basictitlefont; src: url("../../fonts/basictitlefont.ttf"); }
 @font-face { font-family: telegrafico; src: url("../../fonts/telegrafico.ttf"); }
-body #todo-button { font: 25px Arial; color: white; }
 body #todo { font: 20px Champagne-Limousines; }
 body #todo h2 { font: 40px telegrafico; }
 body #todo input[type="text"] { font: 17px Champagne-Limousines; }
@@ -27,9 +26,7 @@ html, body { display: flex; flex-direction: column; align-items: center; justify
 
 body { padding: 70px 0px 0px 0px; }
 
-#todo-button { position: absolute; top: 30px; right: 30px; height: 50px; width: 50px; }
-
-#todo { display: flex; flex-direction: column; align-items: center; position: absolute; height: 100%; width: 25%; right: 0; top: 0; }
+#todo { display: flex; flex-direction: column; align-items: center; position: absolute; height: 100%; width: 325px; right: 0; top: 0; }
 
 #main-container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100%; width: 100%; }
 #main-container #weather { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50%; width: 50%; }
@@ -43,24 +40,26 @@ body { padding: 70px 0px 0px 0px; }
 #news div img { width: 300px; border-radius: 5px; }
 #news div a { text-decoration: none; margin-top: -150px; }
 
-#todo-button { display: flex; flex-direction: column; align-items: center; justify-content: center; outline: none; border-radius: 5px; cursor: pointer; transition: all 0.25s ease; border-radius: 50%; background-color: red; border: 2px outset red; box-shadow: 1px 1px 10px #000000; }
-
-#todo { background-color: white; z-index: 1; box-shadow: 10px 0px 20px 10px #000000; }
+#todo { background-color: rgba(0, 0, 0, 0.7); z-index: 1; box-shadow: 10px 0px 20px 10px #000000; }
+#todo h2 { width: 100%; background-color: rgba(255, 0, 0, 0.6); color: white; padding: 30px 0px; text-align: center; }
 #todo #todo-add { display: flex; flex-direction: row; align-items: center; justify-content: center; }
-#todo h2 { width: 100%; background-color: red; color: white; padding: 30px 0px; text-align: center; }
-#todo input[type="text"] { display: flex; flex-direction: column; align-items: center; justify-content: center; outline: none; border-radius: 5px; cursor: pointer; transition: all 0.25s ease; margin: 20px 10px; padding: 5px; height: 35px; width: 200px; cursor: auto; border: 1px solid red; }
+#todo #todo-add input[type="text"] { display: flex; flex-direction: column; align-items: center; justify-content: center; outline: none; border-radius: 5px; cursor: pointer; transition: all 0.25s ease; margin: 20px 10px; padding: 5px; height: 35px; width: 200px; cursor: auto; border: 1px solid rgba(255, 0, 0, 0.8); }
+#todo #todo-list::-webkit-scrollbar { display: none; width: 0; background: transparent; }
+#todo #todo-list { height: 75%; overflow: scroll; }
 #todo #todo-list ul { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-#todo #todo-list ul li { display: flex; flex-direction: row; align-items: center; justify-content: center; justify-content: space-between; width: 200px; margin: 5px 0px; }
-#todo #todo-list ul li button { outline: none; border-radius: 50%; cursor: pointer; background-color: red; border: none; height: 20px; width: 20px; text-align: center; color: white; }
+#todo #todo-list ul li { display: flex; flex-direction: row; align-items: center; justify-content: center; justify-content: space-between; width: 200px; margin: 5px 0px; color: white; }
+#todo #todo-list ul li button { outline: none; border-radius: 50%; cursor: pointer; background-color: rgba(255, 0, 0, 0.7); border: none; height: 20px; width: 20px; text-align: center; color: white; }
 
 #city input[type="text"]:hover { border: 1px solid white; }
-
-#todo-button:active { border: 2px inset red; }
 
 .article { opacity: 1; transition: all 0.25s ease; }
 
 .article:hover { opacity: 0.8; cursor: pointer; }
 
 #news div a:hover { text-decoration: underline; }
+
+#todo { margin-right: -300px; transition: all 0.35s ease; }
+
+#todo:hover { margin-right: -0px; }
 
 /*# sourceMappingURL=main.css.map */

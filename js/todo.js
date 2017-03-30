@@ -1,6 +1,6 @@
 function addItem(e) {
 	var newItem = $('#todo-new').val();
-	$('#todo-list ul').append('<li><p>' + newItem + '</p><button onclick="removeItem();">X</button></li>');
+	$('#todo-list ul').prepend('<li><p>' + newItem + '</p><button onclick="removeItem();">X</button></li>');
 	$('#todo-new').val('');
 }
 

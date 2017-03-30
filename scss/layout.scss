@@ -12,19 +12,11 @@ body {
 	padding: 70px 0px 0px 0px;
 }
 
-#todo-button {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	height: 50px;
-	width: 50px;
-}
-
 #todo {
 	@include align-centerer(column);
 	position: absolute;
 	height: 100%;
-	width: 25%;
+	width: 325px;
 	right: 0;
 	top: 0;
 }

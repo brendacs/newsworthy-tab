@@ -20,7 +20,7 @@ function getNews() {
 		url: 'https://newsapi.org/v1/articles?source=' + source + '&sortBy=' + sortMethod + '&apiKey=' + apiKey,
 		dataType: 'json',
 		success: function(news) {
-			console.log(news);
+			// console.log(news);
 
 			i = 0;
 			$('#news div div div').each(function(){
@@ -48,7 +48,7 @@ $(document).ready(getNews);
 
 function addItem(e) {
 	var newItem = $('#todo-new').val();
-	$('#todo-list ul').append('<li><p>' + newItem + '</p><button onclick="removeItem();">X</button></li>');
+	$('#todo-list ul').prepend('<li><p>' + newItem + '</p><button onclick="removeItem();">X</button></li>');
 	$('#todo-new').val('');
 }
 

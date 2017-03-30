@@ -31,7 +31,9 @@ function getNews() {
 				var newsTitle = article.title;
 				var images = $(this).find('.article');
 				images.attr('src', newsImage);
-				$(this).append('<a href="' + newsURL + '">' + newsTitle + '</a>');
+				var imageLinks = $(this).find('a');
+				imageLinks.attr('href', newsURL);
+				$(this).append('<a target="_blank" href="' + newsURL + '">' + newsTitle + '</a>');
 				if (i <= news.articles.length - 2) {
 					i++;
 				} else {

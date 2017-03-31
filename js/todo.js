@@ -4,8 +4,8 @@ function addItem(e) {
 	$('#todo-new').val('');
 }
 
-$('.remove').on('click', function removeItem() {
-	$(this).closest('.todo-item').remove();
+$('#todo-list ul').on('click', '.remove', function removeItem() {
+	$(this).closest('li').remove();
 });
 
 $('#todo-new').on('keydown', function(e) {

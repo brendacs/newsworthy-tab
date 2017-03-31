@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	$('.center').slick({
 		centerMode: true,
-		slidesToShow: 3,
+		slidesToShow: 2.75,
 		slidesToScroll: 1,
 		arrows: false,
 		autoplay: true,

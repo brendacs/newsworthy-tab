@@ -1,15 +1,18 @@
+html {
+	background: url('../../images/landscape.jpeg') no-repeat center;
+}
+
 html, body {
 	@include centerer(column);
 	height: 100%;
 	width: 100%;
 	cursor: default;
-	background: url('../../images/landscape.jpeg') no-repeat center;
 	background-size: 100%;
 	overflow: hidden;
 }
 
 body {
-	padding: 70px 0px 0px 0px;
+	padding: 70px 0px 15px 0px;
 }
 
 #todo {

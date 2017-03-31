@@ -77,8 +77,18 @@ $('#todo-new').on('keydown', function(e) {
 	}
 });
 
+$(document).ready(function loadStoredZip() {
+	if (localStorage.getItem('zip')) {
+		$('#zipcode').val(localStorage.getItem('zip'));
+		getWeather();
+	} else {
+		getWeather();
+	}
+});
+
 function getWeather() {
 	var zipString = $('#zipcode').val();
+	localStorage.setItem('zip', zipString);
 	$.simpleWeather({
 		location: zipString,
 		woeid: '',
@@ -104,5 +114,3 @@ $('#zipcode').on('keydown',function changeZip(e) {
         getWeather();
     }
 });
-
-$(document).ready(getWeather);

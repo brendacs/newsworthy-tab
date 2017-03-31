@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 	$('.center').slick({
 		centerMode: true,
 		slidesToShow: 2.75,
@@ -21,7 +21,7 @@ function getNews() {
 			// console.log(news);
 
 			i = 0;
-			$('#news div div div').each(function(){
+			$('#news div div div').each(function() {
 				// many nested divs due to divs created by slick
 				var article = news.articles[i];
 				var newsImage = article.urlToImage;

@@ -8,9 +8,9 @@ function addItem(e) {
 	var newItem = $('#todo-new').val();
 	$('#todo-list ul').prepend('<li class="todo-item"><p>' + newItem + '</p><button class="remove">X</button></li>');
 	$('#todo-new').val('');
-	var todoList = $('#todo-list ul').html();
 
 	// store data
+	var todoList = $('#todo-list ul').html();
 	localStorage.setItem('todo-list', todoList);
 	return false;
 }
@@ -19,6 +19,7 @@ $('#todo-list ul').on('click', '.remove', function removeItem() {
 	$(this).closest('li').remove();
 
 	// store data
+	var todoList = $('#todo-list ul').html();
 	localStorage.setItem('todo-list', todoList);
 	return false;
 });

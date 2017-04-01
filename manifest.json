@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Newsworthy Tab",
 	"version": "0.1",
-	"description": "Newsworthy custom new tab for Google Chrome",
+	"description": "Newsworthy Tab, a minimalistic new tab page with weather, top news headlines, and to-do list.",
 	"icons": {
 		"16": "images/favicon-16.png",
 		"48": "images/favicon-48.png",

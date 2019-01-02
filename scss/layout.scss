@@ -1,5 +1,5 @@
 html {
-	background: url('../../images/landscape.jpeg') no-repeat center;
+	background: url('../../images/landscape.jpg') no-repeat center;
 }
 
 html, body {
@@ -19,7 +19,7 @@ body {
 	@include align-centerer(column);
 	position: absolute;
 	height: 100%;
-	width: 325px;
+	width: 300px;
 	right: 0;
 	top: 0;
 }

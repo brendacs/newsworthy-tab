@@ -15,18 +15,17 @@ function getNews() {
 	var sortMethod = 'top';
 
 	$.ajax({
-		url: 'https://newsapi.org/v1/articles?source=' + source + '&sortBy=' + sortMethod + '&apiKey=' + apiKey,
+    url: 'https://newsapi.org/v2/top-headlines?country=us&apiKey=' + apiKey,
 		dataType: 'json',
 		success: function(news) {
-			// console.log(news);
-
+      console.log(news);
 			i = 0;
 			$('#news div div div').each(function() {
 				// many nested divs due to divs created by slick
 				var article = news.articles[i];
 				var newsImage = article.urlToImage;
 				var newsURL = article.url;
-				var newsTitle = article.title;
+				var newsTitle = article.title.substring(0, 60) + "...";
 				var images = $(this).find('.article');
 				images.attr('src', newsImage);
 				var imageLinks = $(this).find('a');

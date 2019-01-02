@@ -1,74 +1,49 @@
-@font-face {
-	font-family: Cocogoose;
-	src: url("../../fonts/Cocogoose_trial.otf");
-}
-
-@font-face {
-	font-family: Dolce Vita;
-	src: url("../../fonts/Dolce Vita.ttf");
-}
-
-@font-face {
-	font-family: Champagne-Limousines;
-	src: url("../../fonts/Champagne-Limousines.ttf");
-}
-
-@font-face {
-	font-family: basictitlefont;
-	src: url("../../fonts/basictitlefont.ttf");
-}
-
-@font-face {
-	font-family: telegrafico;
-	src: url("../../fonts/telegrafico.ttf");
-}
-
 body {
 	
 	#todo {
-		font: 20px $secondary-font;
+		font: 14px $primary-font;
 		color: black;
 
 		h2 {
-			font: 35px $primary-font;
-			text-shadow: 2px 2px 3px $shadow-color;
+			font: 34px $primary-font;
+			text-shadow: 1px 1px 3px $shadow-color;
 			text-transform: uppercase;
 		}
 
 		input[type="text"] {
-			font: 17px $secondary-font;
+			font: 14px $primary-font;
 		}
 
 		button {
-			font: 10px $tertiary-font;
+			font: 10px $primary-font;
 			color: $primary-color;
 		}
 	}
 
 	#weather {
 		#city, #city input[type="text"] {
-			font: 25px $primary-font;
+			font: 22px $primary-font;
 			color: $primary-color;
-			text-shadow: 2px 2px 3px $shadow-color;
+			text-shadow: 1px 1px 3px $shadow-color;
 		}
 
 		#city label {
-			font: 12px $secondary-font;
+			font: 12px $primary-font;
 			text-shadow: 1px 1px 2px $shadow-color;
 		}
 
 		#temp {
-			font: 140px $primary-font;
+			font: 120px $primary-font;
 			letter-spacing: 10px;
 			color: $primary-color;
-			text-shadow: 2px 3px 8px $shadow-color;
+			text-shadow: 1px 1px 8px $shadow-color;
 		}
 	}
 
 	#news {
 		a {
 			color: $primary-color;
-			font: 12px $secondary-font;
+			font: 12px $primary-font;
 			text-shadow: 1px 1px 2px $shadow-color;
 		}
 	}

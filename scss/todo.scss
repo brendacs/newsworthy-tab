@@ -1,7 +1,7 @@
 #todo {
 	background-color: rgba(255, 255, 255, 0.7);
 	z-index: 1;
-	box-shadow: 10px 0px 20px 10px $shadow-color;
+	box-shadow: 15px 0px 20px 10px $shadow-color;
 
 	h2 {
 		width: 100%;
@@ -16,9 +16,9 @@
 		input[type="text"] {
 			@include basic-button;
 			margin: 20px 10px;
-			padding: 5px;
+			padding: 15px 10px;
 			height: 25px;
-			width: 200px;
+			width: 210px;
 			cursor: auto;
 			border: none;
 		}
@@ -46,7 +46,7 @@
 
 				button {
 					outline: none;
-					border-radius: 50%;
+					border-radius: 3px;
 					cursor: pointer;
 					background-color: rgba(255, 0, 0, 0.6);
 					border: none;

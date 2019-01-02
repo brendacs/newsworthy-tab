@@ -6,7 +6,7 @@ $(document).ready(function loadStoredList() {
 
 function addItem(e) {
 	var newItem = $('#todo-new').val();
-	$('#todo-list ul').prepend('<li class="todo-item"><p>' + newItem + '</p><button class="remove">X</button></li>');
+	$('#todo-list ul').prepend('<li class="todo-item"><p>' + newItem + '</p><button class="remove">✗</button></li>');
 	$('#todo-new').val('');
 
 	// store data

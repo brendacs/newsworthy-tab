@@ -6,9 +6,8 @@ $tertiary-color: #423e35;
 
 $shadow-color: #000000;
 
-$primary-font: Champagne-Limousines;
-$secondary-font: basictitlefont;
-$tertiary-font: telegrafico;
+$primary-font: Karla;
+$secondary-font: Lato;
 
 /* mixins */
 
@@ -26,7 +25,7 @@ $tertiary-font: telegrafico;
 @mixin basic-button {
 	@include centerer(column);
 	outline: none;
-	border-radius: 5px;
+	border-radius: 3px;
 	cursor: pointer;
 	transition: all 0.25s ease;
 }

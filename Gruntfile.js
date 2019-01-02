@@ -2,14 +2,14 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		watch: {
-			scripts: {
-				files: ['**/*.scss', '**/*.js'],
-				tasks: ['sass', 'concat', 'cssmin', 'uglify'],
-				options: {
-					spawn: false,
-				},
-			},
-		},
+      scripts: {
+        files: ['**/*.scss'],
+        tasks: ['sass', 'cssmin', 'concat', 'uglify'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
 		sass: {
 			dist: {
 				options: {
@@ -60,5 +60,6 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default', ['watch']);
 	grunt.registerTask('minify', ['uglify', 'cssmin']);
-	grunt.registerTask('dev', ['sass', 'concat', 'minify']);
+  grunt.registerTask('build', ['sass', 'concat']);
+	grunt.registerTask('dev', ['build', 'minify', 'watch']);
 }
